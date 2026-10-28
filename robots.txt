@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://karier.globalexpor.co.id/sitemap.xml

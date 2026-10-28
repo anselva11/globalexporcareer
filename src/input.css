@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: #1F2937;
+    background-color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Manrope', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background-color: #174A72;
+    color: #FFFFFF;
+  }
+}
+
+@layer components {
+  /* Brand Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold text-white bg-brand-green hover:bg-brand-green-hover transition-all duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-offset-2 active:scale-[0.99] disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold text-brand-navy bg-white border border-brand-border hover:bg-brand-gray hover:border-gray-300 transition-all duration-200 shadow-sm hover:shadow focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 active:scale-[0.99] disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-navy {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold text-white bg-brand-navy hover:bg-brand-navy-light transition-all duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 active:scale-[0.99];
+  }
+
+  .btn-outline-white {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold text-white border border-white/40 hover:bg-white hover:text-brand-navy transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-navy;
+  }
+
+  /* Badge Styles */
+  .badge-open {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200;
+  }
+
+  .badge-closed {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 border border-gray-200;
+  }
+
+  .badge-department {
+    @apply inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-brand-blue-soft text-brand-blue border border-brand-blue/15;
+  }
+
+  .badge-demo {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[11px] font-bold tracking-wider uppercase bg-amber-50 text-amber-800 border border-amber-300;
+  }
+
+  /* Job Card */
+  .job-card {
+    @apply bg-white border border-slate-200/80 rounded-xl p-6 transition-all duration-200 hover:border-brand-blue/40 hover:shadow-card-hover relative flex flex-col justify-between;
+  }
+
+  /* Form Elements */
+  .form-input-custom {
+    @apply w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm text-brand-dark placeholder-slate-400 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all duration-150 bg-white;
+  }
+
+  .form-select-custom {
+    @apply w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm text-brand-dark focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all duration-150 bg-white;
+  }
+}
+
+/* Scroll reveal helper */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Custom Scrollbar for better UI feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F6F8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

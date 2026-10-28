@@ -1,0 +1,28 @@
+{
+  "name": "globalexporcareer",
+  "version": "1.0.0",
+  "description": "Portal Karier Resmi PT Global Expor Indonesia",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --watch",
+    "build": "npm run build:css",
+    "start": "node server.js",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "career",
+    "jobs",
+    "export",
+    "import",
+    "logistics",
+    "indonesia",
+    "recruitment"
+  ],
+  "author": "PT Global Expor Indonesia",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  }
+}
