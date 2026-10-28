@@ -165,16 +165,9 @@ Seluruh data lowongan tersimpan rapi secara terpusat di `assets/js/jobs.js`.
   closingDate: "2026-11-30", // Format YYYY-MM-DD
   status: "active", // "active" | "closed" | "draft"
   featured: true, // true untuk tampil di Beranda
-  applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=...",
-  isDemo: true // Label DEMO untuk pengujian
+  applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=..."
 }
 ```
-
-### Mengubah Antara Mode DEMO dan Mode Resmi (Empty State):
-Untuk menyetel portal ke mode resmi tanpa data demo:
-1. Buka `assets/js/jobs.js`.
-2. Ubah `CONFIG.USE_DEMO_DATA: false`.
-3. Atau uji langsung di browser melalui URL: `karier.html?demo=false`.
 
 ---
 
@@ -187,7 +180,7 @@ Untuk menyetel portal ke mode resmi tanpa data demo:
    ```javascript
    const CONFIG = {
      OFFICIAL_EMAIL: "rekrutmen@globalexpor.co.id",
-     OFFICIAL_PHONE: "+62 21 4390 0000",
+     OFFICIAL_PHONE: "0818 0588 6644",
      OFFICE_ADDRESS: "Gedung Menara Maritim Lantai 12, Tanjung Priok, Jakarta Utara"
    };
    ```

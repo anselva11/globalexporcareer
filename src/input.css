@@ -62,10 +62,6 @@
     @apply inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-brand-blue-soft text-brand-blue border border-brand-blue/15;
   }
 
-  .badge-demo {
-    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[11px] font-bold tracking-wider uppercase bg-amber-50 text-amber-800 border border-amber-300;
-  }
-
   /* Job Card */
   .job-card {
     @apply bg-white border border-slate-200/80 rounded-xl p-6 transition-all duration-200 hover:border-brand-blue/40 hover:shadow-card-hover relative flex flex-col justify-between;

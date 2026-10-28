@@ -2,7 +2,6 @@
   "company": "PT Global Expor Indonesia",
   "portal": "GlobalExporCareer",
   "updatedAt": "2026-10-28T00:00:00Z",
-  "notice": "DEMO DATASET - Hanya untuk keperluan demonstrasi dan pengujian sistem portal karier",
   "jobs": [
     {
       "id": "GEI-OPS-001",
@@ -17,8 +16,7 @@
       "publishedAt": "2026-09-15",
       "closingDate": "2026-11-30",
       "status": "active",
-      "featured": true,
-      "isDemo": true
+      "featured": true
     },
     {
       "id": "GEI-SALES-002",
@@ -33,8 +31,7 @@
       "publishedAt": "2026-09-20",
       "closingDate": "2026-11-25",
       "status": "active",
-      "featured": true,
-      "isDemo": true
+      "featured": true
     },
     {
       "id": "GEI-LOG-003",
@@ -49,8 +46,7 @@
       "publishedAt": "2026-10-01",
       "closingDate": "2026-12-10",
       "status": "active",
-      "featured": true,
-      "isDemo": true
+      "featured": true
     },
     {
       "id": "GEI-SCM-004",
@@ -65,8 +61,7 @@
       "publishedAt": "2026-10-05",
       "closingDate": "2026-12-15",
       "status": "active",
-      "featured": true,
-      "isDemo": true
+      "featured": true
     },
     {
       "id": "GEI-FIN-005",
@@ -81,8 +76,7 @@
       "publishedAt": "2026-10-10",
       "closingDate": "2026-12-20",
       "status": "active",
-      "featured": true,
-      "isDemo": true
+      "featured": true
     },
     {
       "id": "GEI-INT-006",
@@ -97,8 +91,7 @@
       "publishedAt": "2026-10-12",
       "closingDate": "2026-12-05",
       "status": "active",
-      "featured": true,
-      "isDemo": true
+      "featured": true
     },
     {
       "id": "GEI-IT-007",
@@ -113,8 +106,7 @@
       "publishedAt": "2026-10-15",
       "closingDate": "2026-12-30",
       "status": "active",
-      "featured": false,
-      "isDemo": true
+      "featured": false
     },
     {
       "id": "GEI-LEG-008",
@@ -129,24 +121,7 @@
       "publishedAt": "2026-10-18",
       "closingDate": "2026-12-31",
       "status": "active",
-      "featured": false,
-      "isDemo": true
-    },
-    {
-      "id": "GEI-OPS-009",
-      "referenceCode": "REF/2026/OPS/009",
-      "title": "Port Operations Supervisor (Closed Sample)",
-      "slug": "port-operations-supervisor",
-      "department": "Export & Import Operations",
-      "location": "Medan (Belawan)",
-      "employmentType": "Full-time",
-      "experienceLevel": "3-5 Tahun",
-      "shortDescription": "Posisi contoh yang telah ditutup untuk menguji penanganan status lowongan non-aktif dan batas akhir lamaran pada portal karier.",
-      "publishedAt": "2026-08-01",
-      "closingDate": "2026-09-01",
-      "status": "closed",
-      "featured": false,
-      "isDemo": true
+      "featured": false
     }
   ]
 }

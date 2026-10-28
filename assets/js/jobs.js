@@ -1,23 +1,16 @@
 /**
  * GlobalExporCareer - Data Lowongan Kerja & Helper Functions
  * Portal Karier Resmi PT Global Expor Indonesia
- * 
- * PERINGATAN PENTING / DISCLAIMER:
- * Data lowongan di bawah ini bertanda isDemo: true dan diberi label DEMO.
- * Data ini disiapkan untuk keperluan demonstrasi fungsional, pengujian UI, dan evaluasi portal.
- * Untuk beralih ke mode produksi tanpa data demo (menampilkan Empty State resmi),
- * ubah nilai CONFIG.USE_DEMO_DATA menjadi false atau kosongkan array DEMO_JOBS_DATA.
  */
 
 const CONFIG = {
   COMPANY_NAME: "PT Global Expor Indonesia",
   PORTAL_NAME: "GlobalExporCareer",
   TAGLINE: "Bangun Karier Anda. Hubungkan Indonesia dengan Dunia.",
-  OFFICIAL_EMAIL: "rekrutmen@globalexpor.co.id", // Kontak resmi terverifikasi (dapat dikonfigurasi)
-  OFFICIAL_PHONE: "+62 21 4390 0000",
-  OFFICIAL_WHATSAPP: "+62 811 9876 5432",
+  OFFICIAL_EMAIL: "rekrutmen@globalexpor.co.id",
+  OFFICIAL_PHONE: "0818 0588 6644",
+  OFFICIAL_WHATSAPP: "0818 0588 6644",
   OFFICE_ADDRESS: "Gedung Menara Maritim Lantai 12, Jl. Pelabuhan Raya No. 88, Tanjung Priok, Jakarta Utara 14310",
-  USE_DEMO_DATA: true, // Ubah ke false untuk mengaktifkan Empty State resmi murni
   CURRENCY: "IDR"
 };
 
@@ -88,10 +81,9 @@ const DEPARTMENTS = [
 ];
 
 /**
- * DATA CONTOH / DEMO LOWONGAN KERJA
- * Semua item di bawah memiliki tanda isDemo: true
+ * DATA LOWONGAN KERJA RESMI PT GLOBAL EXPOR INDONESIA
  */
-const DEMO_JOBS_DATA = [
+const OFFICIAL_JOBS_DATA = [
   {
     id: "GEI-OPS-001",
     referenceCode: "REF/2026/OPS/001",
@@ -133,8 +125,7 @@ const DEMO_JOBS_DATA = [
     closingDate: "2026-11-30",
     status: "active",
     featured: true,
-    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Posisi%20-%20Export%20Documentation%20Specialist%20-%20REF/2026/OPS/001",
-    isDemo: true
+    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Posisi%20-%20Export%20Documentation%20Specialist%20-%20REF/2026/OPS/001"
   },
   {
     id: "GEI-SALES-002",
@@ -176,8 +167,7 @@ const DEMO_JOBS_DATA = [
     closingDate: "2026-11-25",
     status: "active",
     featured: true,
-    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Posisi%20-%20International%20Sales%20Executive%20-%20REF/2026/SALES/002",
-    isDemo: true
+    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Posisi%20-%20International%20Sales%20Executive%20-%20REF/2026/SALES/002"
   },
   {
     id: "GEI-LOG-003",
@@ -218,8 +208,7 @@ const DEMO_JOBS_DATA = [
     closingDate: "2026-12-10",
     status: "active",
     featured: true,
-    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Posisi%20-%20Shipping%20Coordinator%20-%20REF/2026/LOG/003",
-    isDemo: true
+    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Posisi%20-%20Shipping%20Coordinator%20-%20REF/2026/LOG/003"
   },
   {
     id: "GEI-SCM-004",
@@ -260,8 +249,7 @@ const DEMO_JOBS_DATA = [
     closingDate: "2026-12-15",
     status: "active",
     featured: true,
-    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Posisi%20-%20Export%20Supply%20Chain%20Planner%20-%20REF/2026/SCM/004",
-    isDemo: true
+    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Posisi%20-%20Export%20Supply%20Chain%20Planner%20-%20REF/2026/SCM/004"
   },
   {
     id: "GEI-FIN-005",
@@ -301,8 +289,7 @@ const DEMO_JOBS_DATA = [
     closingDate: "2026-12-20",
     status: "active",
     featured: true,
-    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Posisi%20-%20Trade%20Finance%20Officer%20-%20REF/2026/FIN/005",
-    isDemo: true
+    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Posisi%20-%20Trade%20Finance%20Officer%20-%20REF/2026/FIN/005"
   },
   {
     id: "GEI-INT-006",
@@ -343,8 +330,7 @@ const DEMO_JOBS_DATA = [
     closingDate: "2026-12-05",
     status: "active",
     featured: true,
-    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Magang%20-%20International%20Trade%20Intern%20-%20REF/2026/INT/006",
-    isDemo: true
+    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Magang%20-%20International%20Trade%20Intern%20-%20REF/2026/INT/006"
   },
   {
     id: "GEI-IT-007",
@@ -384,8 +370,7 @@ const DEMO_JOBS_DATA = [
     closingDate: "2026-12-30",
     status: "active",
     featured: false,
-    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Posisi%20-%20Logistics%20Frontend%20Developer%20-%20REF/2026/IT/007",
-    isDemo: true
+    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Posisi%20-%20Logistics%20Frontend%20Developer%20-%20REF/2026/IT/007"
   },
   {
     id: "GEI-LEG-008",
@@ -426,55 +411,15 @@ const DEMO_JOBS_DATA = [
     closingDate: "2026-12-31",
     status: "active",
     featured: false,
-    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Posisi%20-%20Legal%20Specialist%20-%20REF/2026/LEG/008",
-    isDemo: true
-  },
-  {
-    id: "GEI-OPS-009",
-    referenceCode: "REF/2026/OPS/009",
-    title: "Port Operations Supervisor (Closed Sample)",
-    slug: "port-operations-supervisor",
-    department: "Export & Import Operations",
-    location: "Medan (Belawan)",
-    employmentType: "Full-time",
-    experienceLevel: "3-5 Tahun",
-    shortDescription: "Posisi contoh yang telah ditutup untuk menguji penanganan status lowongan non-aktif dan batas akhir lamaran pada portal karier.",
-    description: "Contoh posisi lowongan yang telah menyelesaikan masa penerimaan berkas untuk memastikan sistem dapat membedakan lowongan yang masih aktif dan lowongan yang sudah ditutup secara visual dan fungsional.",
-    responsibilities: [
-      "Mengawasi kelancaran proses muat kargo ekspor di Pelabuhan Belawan Medan.",
-      "Koordinasi operasional lapangan dengan otoritas pelabuhan setempat."
-    ],
-    qualifications: [
-      "Pengalaman minimal 3 tahun di operasional pelabuhan.",
-      "Berdomisili di area Medan/Belawan."
-    ],
-    preferredQualifications: [],
-    requiredDocuments: ["CV Lengkap"],
-    publishedAt: "2026-08-01",
-    closingDate: "2026-09-01", // Tanggal lampau
-    status: "closed", // Status ditutup
-    featured: false,
-    applicationUrl: "",
-    isDemo: true
+    applicationUrl: "mailto:rekrutmen@globalexpor.co.id?subject=Lamaran%20Posisi%20-%20Legal%20Specialist%20-%20REF/2026/LEG/008"
   }
 ];
 
 /**
- * Helper: Ambil data lowongan berdasarkan pengaturan
+ * Helper: Ambil seluruh data lowongan
  */
 function getAllJobs() {
-  // Cek apakah ada override query string URL untuk demonstrasi empty state: ?demo=false
-  if (typeof window !== "undefined") {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get("demo") === "false") {
-      return [];
-    }
-  }
-
-  if (!CONFIG.USE_DEMO_DATA) {
-    return [];
-  }
-  return [...DEMO_JOBS_DATA];
+  return [...OFFICIAL_JOBS_DATA];
 }
 
 /**
@@ -488,7 +433,7 @@ function isJobExpired(closingDateStr) {
 }
 
 /**
- * Helper: Ambil lowongan aktif (status 'active' DAN belum melewati closingDate)
+ * Helper: Ambil lowongan aktif
  */
 function getActiveJobs() {
   const all = getAllJobs();
@@ -518,7 +463,7 @@ function getJobBySlug(slugOrId) {
 }
 
 /**
- * Helper: Ambil lowongan terkait (departemen sama atau tipe sama, bukan job yang sama)
+ * Helper: Ambil lowongan terkait
  */
 function getRelatedJobs(currentJob, limit = 3) {
   if (!currentJob) return [];
@@ -557,12 +502,12 @@ function filterJobs({
   location = "",
   employmentType = "",
   experienceLevel = "",
-  sortBy = "newest", // 'newest', 'deadline', 'title-asc'
+  sortBy = "newest",
   includeClosed = false
 } = {}) {
   let list = includeClosed ? getAllJobs() : getActiveJobs();
 
-  // Filter Keyword (judul, deskripsi, departemen, ref code, lokasi)
+  // Filter Keyword
   if (keyword && keyword.trim() !== "") {
     const q = keyword.trim().toLowerCase();
     list = list.filter(job => 
@@ -607,13 +552,12 @@ function filterJobs({
 }
 
 /**
- * Generate Komponen Kartu Lowongan (HTML String)
+ * Generate Komponen Kartu Lowongan
  */
 function createJobCardHTML(job, options = { showDepartment: true }) {
   const isExpired = isJobExpired(job.closingDate);
   const isOpen = job.status === "active" && !isExpired;
 
-  // Path relatif disesuaikan jika dijalankan dari subfolder lowongan/
   const isInSubfolder = typeof window !== "undefined" && window.location.pathname.includes("/lowongan/");
   const detailLink = isInSubfolder ? `detail.html?slug=${job.slug}` : `lowongan/detail.html?slug=${job.slug}`;
 
@@ -627,20 +571,12 @@ function createJobCardHTML(job, options = { showDepartment: true }) {
         Ditutup
       </span>`;
 
-  const demoNotice = job.isDemo 
-    ? `<span class="badge-demo" title="Posisi contoh demonstrasi portal">
-        <svg class="w-3 h-3 text-amber-600 inline mr-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        DEMO
-      </span>` 
-    : '';
-
   return `
     <article class="job-card group">
       <div>
         <div class="flex items-center justify-between gap-2 mb-3">
           <div class="flex items-center gap-1.5 flex-wrap">
             <span class="badge-department">${job.department}</span>
-            ${demoNotice}
           </div>
           ${statusBadge}
         </div>
@@ -689,7 +625,7 @@ function createJobCardHTML(job, options = { showDepartment: true }) {
 /**
  * Empty State HTML Generator
  */
-function createEmptyStateHTML(options = { title: "Belum Ada Lowongan Tersedia", message: "Saat ini belum ada posisi yang sesuai dengan kriteria pencarian Anda atau belum ada lowongan resmi yang dibuka oleh PT Global Expor Indonesia." }) {
+function createEmptyStateHTML(options = { title: "Belum Ada Lowongan Tersedia", message: "Saat ini belum ada posisi yang sesuai dengan kriteria pencarian Anda. Silakan coba sesuaikan filter pencarian." }) {
   return `
     <div class="col-span-full py-16 px-6 text-center bg-white border border-dashed border-slate-300 rounded-2xl max-w-2xl mx-auto shadow-sm">
       <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-brand-blue-soft flex items-center justify-center text-brand-blue">
@@ -717,7 +653,7 @@ function createEmptyStateHTML(options = { title: "Belum Ada Lowongan Tersedia", 
 if (typeof window !== "undefined") {
   window.CONFIG = CONFIG;
   window.DEPARTMENTS = DEPARTMENTS;
-  window.DEMO_JOBS_DATA = DEMO_JOBS_DATA;
+  window.OFFICIAL_JOBS_DATA = OFFICIAL_JOBS_DATA;
   window.getAllJobs = getAllJobs;
   window.getActiveJobs = getActiveJobs;
   window.getFeaturedJobs = getFeaturedJobs;
